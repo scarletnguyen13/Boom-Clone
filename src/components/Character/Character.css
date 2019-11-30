@@ -1,0 +1,22 @@
+#character {
+  max-width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+#character-container {
+  position: relative;
+  height: auto;
+  width: auto;
+  left: 130px;
+  top: 130px;
+}
+
+#character-input {
+  border: none;
+  outline: none;
+  background: url(../../images/characters/Char1.png) no-repeat center;
+  background-size: contain;
+  width: 85px;
+  height: 85px;
+}
