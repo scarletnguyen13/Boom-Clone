@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useWindowDimensions from './WindowDimensions';
+import useWindowDimensions from './hooks/useWindowDimensions';
 
 import './Character.css';
 
@@ -24,9 +24,11 @@ const Character: React.FC = () => {
   };
 
   return (
-    <div id="character-container" style={{left: x, top: y}}>
+    <div>
+      <div id="character-container" style={{left: x, top: y}}>
         <input type = "button" id="character-input" onKeyDown={(e) => handleKeyPress(e)} autoFocus
                ref={input => input && input.focus()}/>
+      </div>
     </div>
   );
 }
