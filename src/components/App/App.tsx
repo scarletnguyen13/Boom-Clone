@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './App.css';
-import { Logo } from '..';
+import { Character } from '..';
 
 const App: React.FC = () => {
   return (
-    <Logo />
+    <Character />
   );
 }
 
