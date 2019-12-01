@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
-import useWindowDimensions from './hooks/useWindowDimensions';
 
 import './Character.css';
 
 const CHARACTER_SIZE = 85;
-const MOVE_RATE = 50;
+const MOVE_RATE = 85;
 
-const Character: React.FC = () => {
-  const { height, width } = useWindowDimensions();
+type CharacterProps = {
+  width: number,
+  height: number,
+  map: (string)[][]
+}
+
+const Character: React.FC<CharacterProps> =  (props: CharacterProps)  => {
+  const { height, width, map } = props;
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   

@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './App.css';
-import { Character } from '..';
+import { Map } from '..';
 
 const App: React.FC = () => {
   return (
-    <Character />
+    <Map />
   );
 }
 
